@@ -8,5 +8,7 @@ sp1_zkvm::entrypoint!(main);
 use playground_common::scenarios::print_usize;
 
 pub fn main() {
+    println!("### SP1 guest running...");
+
     print_usize::run();
 }
