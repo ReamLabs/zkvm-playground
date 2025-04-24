@@ -1,0 +1,10 @@
+[package]
+version = "0.1.0"
+name = "playground-program"
+edition = "2021"
+
+[dependencies]
+alloy-sol-types = { workspace = true }
+sp1-zkvm = "4.2.0"
+
+playground-common = { path = "../../common" }
