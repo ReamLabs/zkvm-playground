@@ -1,15 +1,25 @@
 ##################################################
 Running SP1
 ##################################################
-
-stdout: u64::MAX = 18446744073709551615
-stdout: usize::BITS = 32
-stdout: usize::MAX = 4294967295
+-------------------- playground_common::scenarios::print_usize::PrintUsize --------------------
+u64::MAX = 18446744073709551615
+usize::BITS = 32
+usize::MAX = 4294967295
+-------------------- playground_common::scenarios::large_variable_list::LargeVariableList --------------------
+U1073741824::to_usize(): 1073741824
+VariableList::<u8, U1073741824>::max_len(): 1073741824
+-------------------- END --------------------
+Program executed successfully.
+Number of cycles: 18313
 
 ##################################################
 Running RISC Zero
 ##################################################
-
+-------------------- playground_common::scenarios::print_usize::PrintUsize --------------------
 u64::MAX = 18446744073709551615
 usize::BITS = 32
 usize::MAX = 4294967295
+-------------------- playground_common::scenarios::large_variable_list::LargeVariableList --------------------
+U1073741824::to_usize(): 1073741824
+VariableList::<u8, U1073741824>::max_len(): 1073741824
+-------------------- END --------------------
