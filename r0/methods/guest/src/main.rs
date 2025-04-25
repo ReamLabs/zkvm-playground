@@ -1,10 +1,17 @@
 #[allow(unused_imports)] // Otherwise build fails with "error: linking with `rust-lld`"
 use risc0_zkvm::guest::env;
 
-use playground_common::scenarios::print_usize;
+use playground_common::{
+    helpers::print_separator,
+    scenarios::{Scenario, large_variable_list::LargeVariableList, print_usize::PrintUsize}
+};
 
-fn main() {
-    println!("### RISC Zero guest running...");
+pub fn main() {
+    print_separator(std::any::type_name::<PrintUsize>());
+    PrintUsize::run();
 
-    print_usize::run();
+    print_separator(std::any::type_name::<LargeVariableList>());
+    LargeVariableList::run();
+
+    print_separator("END");
 }
