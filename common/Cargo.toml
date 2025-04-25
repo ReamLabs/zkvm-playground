@@ -3,3 +3,7 @@ name = "playground-common"
 edition = "2021"
 version = "0.1.0"
 rust-version = "1.81.0"
+
+[dependencies]
+ethereum_ssz = "0.8"
+ssz_types = "0.10"

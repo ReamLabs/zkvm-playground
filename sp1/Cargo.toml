@@ -7,3 +7,6 @@ resolver = "2"
 
 [workspace.dependencies]
 alloy-sol-types = "1.0"
+
+[patch.crates-io]
+ethereum_hashing = { git = "https://github.com/ReamLabs/ethereum_hashing.git" }
