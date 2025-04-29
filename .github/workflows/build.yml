@@ -1,4 +1,4 @@
-name: Build Program
+name: Build & Run Program
 
 on:
   workflow_dispatch:
