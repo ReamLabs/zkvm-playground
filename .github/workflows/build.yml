@@ -31,7 +31,7 @@ jobs:
 
       - name: Build SP1 program
         run: |
-          cd program
+          cd sp1/program/
           ~/.sp1/bin/cargo-prove prove build
 
       - name: Run SP1 program
@@ -63,6 +63,7 @@ jobs:
 
       - name: Build Risc0 guest program
         run: |
+          cd r0/
           cargo build
 
       - name: Run Risc0 program
