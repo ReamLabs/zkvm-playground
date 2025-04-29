@@ -36,7 +36,7 @@ jobs:
 
       - name: Run SP1 program
         run: |
-          make sp1
+          LOG_TO_FILE=0 make sp1
 
   build-r0:
     runs-on: ubuntu-latest
@@ -68,4 +68,4 @@ jobs:
 
       - name: Run Risc0 program
         run: |
-          make r0
+          LOG_TO_FILE=0 make r0
