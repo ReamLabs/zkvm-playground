@@ -1,25 +1,47 @@
 ##################################################
 Running SP1
 ##################################################
--------------------- playground_common::scenarios::print_usize::PrintUsize --------------------
-u64::MAX = 18446744073709551615
-usize::BITS = 32
-usize::MAX = 4294967295
--------------------- playground_common::scenarios::large_variable_list::LargeVariableList --------------------
-U1073741824::to_usize(): 1073741824
-VariableList::<u8, U1073741824>::max_len(): 1073741824
--------------------- END --------------------
-Program executed successfully.
-Number of cycles: 18313
+stdout: -------------------- playground_common::scenarios::print_usize::PrintUsize --------------------
+stdout: usize::BITS = 32
+stdout: usize::MAX = 4294967295
+stdout: -------------------- playground_common::scenarios::large_variable_list::LargeVariableList --------------------
+stdout: U16::to_usize(): 16
+stdout: VariableList::<u8, U16>::max_len(): 16
+stdout: U256::to_usize(): 256
+stdout: VariableList::<u8, U256>::max_len(): 256
+stdout: U65536::to_usize(): 65536
+stdout: VariableList::<u8, U65536>::max_len(): 65536
+stdout: U2147483648::to_usize(): 2147483648
+stdout: VariableList::<u8, U2147483648>::max_len(): 2147483648
+stdout: U4294967296::to_usize(): 0
+stdout: VariableList::<u8, U4294967296>::max_len(): 0
+stdout: U1099511627776::to_usize(): 0
+stdout: VariableList::<u8, U1099511627776>::max_len(): 0
+stdout: -------------------- playground_common::scenarios::u64_max_value::U64MaxValue --------------------
+stdout: u64::MAX = 18446744073709551615
+stdout: u64_max_value: 18446744073709551615
+stdout: -------------------- END --------------------
 
 ##################################################
 Running RISC Zero
 ##################################################
 -------------------- playground_common::scenarios::print_usize::PrintUsize --------------------
-u64::MAX = 18446744073709551615
 usize::BITS = 32
 usize::MAX = 4294967295
 -------------------- playground_common::scenarios::large_variable_list::LargeVariableList --------------------
-U1073741824::to_usize(): 1073741824
-VariableList::<u8, U1073741824>::max_len(): 1073741824
+U16::to_usize(): 16
+VariableList::<u8, U16>::max_len(): 16
+U256::to_usize(): 256
+VariableList::<u8, U256>::max_len(): 256
+U65536::to_usize(): 65536
+VariableList::<u8, U65536>::max_len(): 65536
+U2147483648::to_usize(): 2147483648
+VariableList::<u8, U2147483648>::max_len(): 2147483648
+U4294967296::to_usize(): 0
+VariableList::<u8, U4294967296>::max_len(): 0
+U1099511627776::to_usize(): 0
+VariableList::<u8, U1099511627776>::max_len(): 0
+-------------------- playground_common::scenarios::u64_max_value::U64MaxValue --------------------
+u64::MAX = 18446744073709551615
+u64_max_value: 18446744073709551615
 -------------------- END --------------------

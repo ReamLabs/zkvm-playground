@@ -1,5 +1,5 @@
 use ssz_types::{
-    typenum::{Unsigned, U2147483648, U4294967296, U1099511627776},
+    typenum::{Unsigned, U16, U256, U65536, U2147483648, U4294967296, U1099511627776},
     VariableList
 };
 
@@ -13,6 +13,18 @@ impl Scenario for LargeVariableList {
     }
 
     fn run() {
+        // 2^4
+        println!("U16::to_usize(): {}", U16::to_usize());
+        println!("VariableList::<u8, U16>::max_len(): {}", VariableList::<u8, U16>::max_len());
+
+        // 2^8
+        println!("U256::to_usize(): {}", U256::to_usize());
+        println!("VariableList::<u8, U256>::max_len(): {}", VariableList::<u8, U256>::max_len());
+
+        // 2^16
+        println!("U65536::to_usize(): {}", U65536::to_usize());
+        println!("VariableList::<u8, U65536>::max_len(): {}", VariableList::<u8, U65536>::max_len());
+
         // 2^31
         println!("U2147483648::to_usize(): {}", U2147483648::to_usize());
         println!("VariableList::<u8, U2147483648>::max_len(): {}", VariableList::<u8, U2147483648>::max_len());
